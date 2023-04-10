@@ -1,0 +1,49 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.accordian {
+    display: flex;
+    gap: 1rem;
+    width: 50vw;
+}
+
+.accordian button[aria-expanded="true"] {
+    flex-grow: 5000;
+}
+
+.accordian button:nth-child(1) {
+    --_color: blue
+}
+
+.accordian button:nth-child(2) {
+    --_color: green
+}
+
+.accordian button:nth-child(3){
+    --_color: red
+}
+
+
+.accordian button {
+    --_color: unset;
+    height: 40vh;
+    border: 0;
+    background-color: var(--_color);
+    transition: flex-grow 500ms;
+}

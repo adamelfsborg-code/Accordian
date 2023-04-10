@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+    <link rel="stylesheet" href="./style.css">
+    <link 
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="accordian" id="accordian-1">
+            <button type="button" aria-expanded="false" class="accordian-button">
+                <div class="accordian-panel" id="accordian-panel-1">
+                    <div class="accordian-header">
+                        <h4>
+                            <span>
+                                Family
+                            </span>
+                            <i class="fa-solid fa-users"></i>
+                        </h4>
+                    </div>
+                    <div class="accordian-body" aria-hidden="true" >
+
+                    </div>
+                </div>
+            </button>
+            <button type="button" aria-expanded="true" class="accordian-button">     
+                <div class="accordian-panel" id="accordian-panel-2">
+                    <div class="accordian-header">
+                        <h4>
+                            <span>
+                                Home
+                            </span>
+                            <i class="fa-solid fa-house"></i>
+                        </h4>
+                    </div>
+                    <div class="accordian-body" aria-hidden="false">
+                        
+                    </div>
+                </div>
+            </button>
+            <button type="button" aria-expanded="false" class="accordian-button">    
+                <div class="accordian-panel" id="accordian-panel-2">
+                    <div class="accordian-header">
+                        <h4>
+                            <span>
+                                Vacation
+                            </span>
+                            <i class="fa-solid fa-plane"></i>
+                        </h4>
+                    </div>
+                    <div class="accordian-body" aria-hidden="true">
+                        
+                    </div>
+                </div>
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>
