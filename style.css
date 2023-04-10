@@ -28,22 +28,52 @@ body {
 }
 
 .accordian button:nth-child(1) {
-    --_color: blue
+    --_color: #3BCEAC
 }
 
 .accordian button:nth-child(2) {
-    --_color: green
+    --_color: #0EAD69
 }
 
 .accordian button:nth-child(3){
-    --_color: red
+    --_color: #EE4266
 }
 
 
 .accordian button {
-    --_color: unset;
     height: 40vh;
     border: 0;
-    background-color: var(--_color);
     transition: flex-grow 500ms;
+    padding: 1rem;
+    background-color: transparent;
+    outline: 4px solid var(--_color);
+    border-radius: 30px;
+}
+
+.accordian-panel {
+    height: calc(100% - 2rem);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+}
+
+.accordian-panel .accordian-header {
+    display: none;
+}
+
+.accordian button[aria-expanded="true"] .accordian-header {
+    display: inline-block;
+} 
+
+.accordian button[aria-expanded="true"] h4 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+} 
+
+.accordian-heading {
+    position: absolute;
+    bottom: 1rem;
+    left: .5rem;
 }
